@@ -7,5 +7,6 @@
                  [org.clojure/tools.nrepl "0.2.12"]]
   :main ^:skip-aot routine.core
   :target-path "target/%s"
-  :profiles {:dev {:plugins [[cider/cider-nrepl "0.8.1"]]}})
+  :profiles {:dev {:plugins [[cider/cider-nrepl "0.11.0-SNAPSHOT"]
+                             [lein-tar "3.2.0"]]}})
 
