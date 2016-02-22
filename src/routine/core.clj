@@ -17,12 +17,16 @@
          (not (string/blank? name))]}
   (->WorkflowTask name ignore_errors))
 
-(def task1 (workflowTask "task 1" true))
 
-(:ignore_errors task1)
+;; i need to go reading and find out how to can i have a defrecord with an abstract data type
+(defrecord WorkflowTaskRunner [WorkflowTask])
+
+;(def task1 (workflowTask "task 1" true))
+
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
   (println (:name task1)))
+
 
